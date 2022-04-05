@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="51">
+<modDesc descVersion="64">
     <author>EDGE Gaming</author>
     <version>1.0.0.0</version>
     <iconFilename>icon.png</iconFilename>
@@ -20,24 +20,8 @@ The Buildings have automatic lighting.
 Price:  10.000€
 Size:   13 x 12.5 Meters
 
--The Buildings supports "Seasons", "Courseplay Six" & "MaizePlus".
-
 -If you find any bugs or got suggestions for improvment, please dont hesitate to contact us on our Github page at https://github.com/FS19-Mods-By-EDGE/
-or Contact EDGEPureGaming on facebook.
-
-Note: If you have it placed on your map you need to buy it again or fix it by changing the info in FarmingSimulator2019/savegame§§/items.xml. (§§ = Savegame number)
--from: modName="FS19_EDGE_Multi_Selling_Station" filename="$moddir$FS19_EDGE_Multi_Selling_Station/MultiSellingStationDark.xml"
--to: modName="FS19_EDGE_Multi_Selling_Station" filename="$moddir$FS19_EDGE_Multi_Selling_Station/data/MultiSellingStationDark.xml"
-and
--from: modName="FS19_EDGE_Multi_Selling_Station" filename="$moddir$FS19_EDGE_Multi_Selling_Station/MultiSellingStation.xml"
--to: modName="FS19_EDGE_Multi_Selling_Station" filename="$moddir$FS19_EDGE_Multi_Selling_Station/data/MultiSellingStation.xml"
-
-Changelog 2.0.0.0:
-- Updated to support Seasons better.
-- Added Support for tons of mod filltypes.
-- Added button for warning stripes, these can now be turned off without using the UI.
-- Added support for MaizePlus.
-- Added Italian translation.]]></en>
+or Contact EDGEPureGaming on facebook.]]></en>
 
         <de><![CDATA[Multi Verkaufsstation. Hier können Sie alles verkaufen, was Sie möchten, von der Ernte bis zu Saatgut und Dünger.
 Die Verkaufspreise schwanken und erscheinen auf dem PDA / der Statistik.
@@ -46,24 +30,8 @@ Die Gebäude verfügen über eine automatische Beleuchtung.
 Preis: 10.000€
 Größe: 6x9.5 Meter
 
--Die Gebäude unterstützen "Seasons", "Courseplay Six" und "MaizePlus".
-
 -Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, zögern Sie bitte nicht, uns auf unserer Github-Seite unter https://github.com/FS19-Mods-By-EDGE/
-zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.
-
-Hinweis: Wenn Sie es auf Ihrer Karte platziert haben, müssen Sie es erneut kaufen oder durch Ändern der Informationen in FarmingSimulator2019/savegame§§/items.xml. (§§ = Savegame-Nummer) reparieren.
--von: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--zu: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-und
--von: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--zu: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Änderungsprotokoll 2.0.0.0:
-- Aktualisiert, um Seasons besser zu unterstützen.
-- Unterstützung für Tonnen von Mod-Fülltypen hinzugefügt.
-- Schaltfläche für Warnstreifen hinzugefügt, diese können jetzt ohne Verwendung der Benutzeroberfläche deaktiviert werden.
-- Unterstützung für MaizePlus hinzugefügt.
-- Italienische Übersetzung hinzugefügt.]]></de>
+zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.]]></de>
 
         <fr><![CDATA[Poste de vente multiple. Ici, vous pouvez vendre ce que vous voulez, de la récolte aux semences et aux engrais.
 Les prix de vente fluctueront et apparaîtront sur le PDA / Statistics.
@@ -72,24 +40,8 @@ Les bâtiments ont un éclairage automatique.
 Prix:   10.000€
 Taille: 13 x 12.5 Mètres
 
--Les bâtiments prennent en charge "Seasons", "Courseplay Six" et "MaizePlus".
-
 -Si vous trouvez des bugs ou avez des suggestions d'amélioration, n'hésitez pas à nous contacter sur notre page Github à https://github.com/FS19-Mods-By-EDGE/
-ou Contacter EDGEPureGaming sur facebook.
-
-Remarque: Si vous l'avez placé sur votre carte, vous devez l'acheter à nouveau ou le corriger en modifiant les informations dans FarmingSimulator2019/savegame§§/items.xml. (§§ = numéro de sauvegarde)
--de: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--à: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-et
--de: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--à: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Changer le journal 2.0.0.0:
-- Mise à jour pour mieux prendre en charge Seasons.
-- Ajout de la prise en charge de tonnes de types de remplissage de mod.
-- Bouton ajouté pour les bandes d'avertissement, celles-ci peuvent maintenant être désactivées sans utiliser l'interface utilisateur.
-- Ajout de la prise en charge de MaizePlus.
-- Ajout de la traduction italienne.]]></fr>
+ou Contacter EDGEPureGaming sur facebook.]]></fr>
 
         <es><![CDATA[Estación De Venta Múltiple. Aquí puede vender lo que quiera, desde la cosecha hasta las semillas y los fertilizantes.
 Los precios de venta fluctuarán y aparecerán en el PDA / Estadísticas.
@@ -98,24 +50,8 @@ Los edificios tienen iluminación automática.
 Precio: 10.000 €
 Tamaño: 13 x 12.5 Metros
 
--Los edificios son compatibles con "Seasons", "Courseplay Six" y "MaizePlus".
-
 -Si encuentra algún error u obtiene sugerencias de mejora, no dude en contactarnos en nuestra página de Github en https://github.com/FS19-Mods-By-EDGE/
-o póngase en contacto con EDGEPureGaming en Facebook.
-
-Nota: Si lo tiene colocado en su mapa, debe comprarlo nuevamente o arreglarlo cambiando la información en FarmingSimulator2019/savegame§§/items.xml. (§§ = número de juego guardado)
--desde: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--a: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-y
--desde: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--a: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Registro de cambios 2.0.0.0:
-- Actualizado para soportar mejor las estaciones.
-- Soporte agregado para toneladas de tipos de relleno mod.
-- Botón agregado para franjas de advertencia, ahora se pueden desactivar sin usar la interfaz de usuario.
-- Se agregó soporte para MaizePlus.
-- Añadida traducción al italiano.]]></es>
+o póngase en contacto con EDGEPureGaming en Facebook.]]></es>
 
         <ru><![CDATA[Мультипродажная станция. Здесь вы можете продать все, что захотите, от сбора урожая до семян и удобрений.
 Продажные цены будут колебаться и отображаться на КПК / Статистика.
@@ -124,24 +60,8 @@ Registro de cambios 2.0.0.0:
 Цена:   10.000 €
 Размер: 13 x 12.5 Mетра
 
-- Постройки поддерживает «Seasons», «Courseplay Six» и «MaizePlus».
-
 -Если вы обнаружите какие-либо ошибки или получите предложения по улучшению, пожалуйста, не стесняйтесь связаться с нами на нашей странице Github по адресу https://github.com/FS19-Mods-By-EDGE/
-или связаться с EDGEPureGaming на Facebook.
-
-Примечание. Если он размещен на вашей карте, его необходимо купить снова или исправить, изменив информацию в FarmingSimulator2019/savegame§§/items.xml. (§§ = номер сохраненной игры)
--от: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--в: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-и
--от: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--в: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Журнал изменений 2.0.0.0:
-- Обновлен для поддержки сезонов лучше.
-- Добавлена поддержка множества модов заполнения.
-- Добавлена кнопка для предупреждающих полос, теперь они могут быть отключены без использования пользовательского интерфейса.
-- Добавлена поддержка MaizePlus.
-- Добавлен итальянский перевод.]]></ru>
+или связаться с EDGEPureGaming на Facebook.]]></ru>
 
         <pl><![CDATA[Stacja Sprzedaży. Tutaj możesz sprzedać wszystko, co chcesz, od zbiorów upraw po nasiona i nawozy.
 Ceny sprzedaży będą się zmieniać i pojawiać na PDA / statystykach.
@@ -150,24 +70,8 @@ Budynki mają automatyczne oświetlenie.
 Cena:       10.000 €
 Rozmiar:    13 x 12.5 Metrów
 
-- Budynki obsługują „Seasons”, „Courseplay Six” i „MaizePlus”.
-
 -Jeśli znajdziesz jakieś błędy lub masz sugestie dotyczące ulepszeń, nie wahaj się skontaktować z nami na naszej stronie Github pod adresem https://github.com/FS19-Mods-By-EDGE/
-lub Skontaktuj się z EDGEPureGaming na Facebooku.
-
-Uwaga: jeśli umieściłeś go na mapie, musisz go kupić ponownie lub naprawić, zmieniając informacje w FarmingSimulator2019/savegame§§/items.xml. (§§ = numer zapisanej gry)
--od: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--do: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-i
--od: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--do: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Dziennik zmian 2.0.0.0:
-- Zaktualizowano, aby lepiej obsługiwać Pory roku.
-- Dodano wsparcie dla ton modów typów wypełnień.
-- Dodano przycisk pasków ostrzegawczych, które można teraz wyłączyć bez użycia interfejsu użytkownika.
-- Dodano obsługę MaizePlus.
-- Dodano tłumaczenie na włoski.]]></pl>
+lub Skontaktuj się z EDGEPureGaming na Facebook.]]></pl>
         <it><![CDATA[Stazione di vendita multipla. Qui puoi vendere tutto ciò che desideri, dalla raccolta delle colture ai semi e ai fertilizzanti.
 I prezzi di vendita fluttueranno e compariranno sulle statistiche.
 Gli edifici hanno illuminazione automatica.
@@ -175,29 +79,14 @@ Gli edifici hanno illuminazione automatica.
 Prezzo: 10.000 €
 Dimensioni: 13 x 12,5 metri
 
--Supporta "Stagioni", "Courseplay Six" e "MaizePlus".
-
 -Se trovi qualche bug o hai suggerimenti per l'improvvisazione, non esitare a contattarci sulla nostra pagina Github all'indirizzo https://github.com/FS19-Mods-By-EDGE/
-o Contatta EDGEPureGaming su Facebook.
-
-Nota: se l'hai posizionato sulla tua mappa, devi acquistarlo di nuovo o correggerlo modificando le informazioni in FarmingSimulator2019/savegame§§/items.xml. (§§ = numero savegame)
--a partire dal: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStationDark.xml"
--per: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStationDark.xml"
-e
--a partire dal: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/MultiSellingStation.xml"
--per: modName="FS19_EDGE_Multi_Filling_Station" filename="$moddir$FS19_EDGE_Multi_Filling_Station/data/MultiSellingStation.xml"
-
-Registro delle modifiche 2.0.0.0:
-- Aggiornato per supportare meglio Seasons.
-- Aggiunto il supporto per tonnellate di filltype mod.
-- Aggiunto il pulsante per le strisce di avvertimento, che ora possono essere disattivate senza usare l'interfaccia utente.
-- Aggiunto il supporto per MaizePlus.
-- Aggiunta la traduzione italiana.]]></it>
+o Contatta EDGEPureGaming su Facebook.]]></it>
     </description>
     <multiplayer supported="true"/>
     <storeItems>
-        <storeItem rootNode="placeable" xmlFilename="data/MultiSellingStation.xml"/>
-        <storeItem rootNode="placeable" xmlFilename="data/MultiSellingStationDark.xml"/>
+        <storeItem xmlFilename="data/MultiSellingStation.xml"/>
+        <storeItem xmlFilename="data/MultiSellingStationDark.xml"/>
+        <storeItem xmlFilename="data/MultiSellingStationGold.xml"/>
     </storeItems>
     <brands>
         <brand name="EDGE" title="EDGE Industries" image="store/EDGE_Brand_Logo.dds"/>
@@ -268,4 +157,13 @@ Registro delle modifiche 2.0.0.0:
             <it>Nascondi le strisce di avvertimento</it>
         </text>
     </l10n>
+    <placeableTypes>
+		<type name="easyWeighStation" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="weighingStation" />
+			<specialization name="windTurbine" />
+			<specialization name="incomePerHour" />
+			<specialization name="sellingStation" />
+			<specialization name="infoTrigger" />
+		</type>
+	</placeableTypes>
 </modDesc>
