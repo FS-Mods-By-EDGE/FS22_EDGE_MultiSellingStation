@@ -17,70 +17,90 @@
 Selling prices will fluctuate and show up on the Statistics.
 The Buildings have automatic lighting.
 
+Warning stripes can be turned on & off with a convenient button.
+
 Price:  10.000€
 Size:   13 x 12.5 Meters
 
 -If you find any bugs or got suggestions for improvment, please dont hesitate to contact us on our Github page at https://github.com/FS19-Mods-By-EDGE/
-or Contact EDGEPureGaming on facebook.]]></en>
+or Contact EDGEPureGaming on facebook. We have recieved alot of good feedback from here.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></en>
 
         <de><![CDATA[Multi Verkaufsstation. Hier können Sie alles verkaufen, was Sie möchten, von der Ernte bis zu Saatgut und Dünger.
 Die Verkaufspreise schwanken und erscheinen auf dem PDA / der Statistik.
 Die Gebäude verfügen über eine automatische Beleuchtung.
 
+Warnstreifen können mit einer praktischen Taste ein- und ausgeschaltet werden.
+
 Preis: 10.000€
 Größe: 6x9.5 Meter
 
 -Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, zögern Sie bitte nicht, uns auf unserer Github-Seite unter https://github.com/FS19-Mods-By-EDGE/
-zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.]]></de>
+zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></de>
 
         <fr><![CDATA[Poste de vente multiple. Ici, vous pouvez vendre ce que vous voulez, de la récolte aux semences et aux engrais.
 Les prix de vente fluctueront et apparaîtront sur le PDA / Statistics.
 Les bâtiments ont un éclairage automatique.
 
+Les bandes d'avertissement peuvent être activées et désactivées avec un bouton pratique.
+
 Prix:   10.000€
 Taille: 13 x 12.5 Mètres
 
 -Si vous trouvez des bugs ou avez des suggestions d'amélioration, n'hésitez pas à nous contacter sur notre page Github à https://github.com/FS19-Mods-By-EDGE/
-ou Contacter EDGEPureGaming sur facebook.]]></fr>
+ou Contacter EDGEPureGaming sur facebook.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></fr>
 
         <es><![CDATA[Estación De Venta Múltiple. Aquí puede vender lo que quiera, desde la cosecha hasta las semillas y los fertilizantes.
 Los precios de venta fluctuarán y aparecerán en el PDA / Estadísticas.
 Los edificios tienen iluminación automática.
 
+Las franjas de advertencia se pueden activar y desactivar con un botón conveniente.
+
 Precio: 10.000 €
 Tamaño: 13 x 12.5 Metros
 
 -Si encuentra algún error u obtiene sugerencias de mejora, no dude en contactarnos en nuestra página de Github en https://github.com/FS19-Mods-By-EDGE/
-o póngase en contacto con EDGEPureGaming en Facebook.]]></es>
+o póngase en contacto con EDGEPureGaming en Facebook.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></es>
 
         <ru><![CDATA[Мультипродажная станция. Здесь вы можете продать все, что захотите, от сбора урожая до семян и удобрений.
 Продажные цены будут колебаться и отображаться на КПК / Статистика.
 Здания имеют автоматическое освещение.
 
+Предупреждающие полосы можно включать и выключать с помощью удобной кнопки.
+
 Цена:   10.000 €
 Размер: 13 x 12.5 Mетра
 
 -Если вы обнаружите какие-либо ошибки или получите предложения по улучшению, пожалуйста, не стесняйтесь связаться с нами на нашей странице Github по адресу https://github.com/FS19-Mods-By-EDGE/
-или связаться с EDGEPureGaming на Facebook.]]></ru>
+или связаться с EDGEPureGaming на Facebook.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></ru>
 
         <pl><![CDATA[Stacja Sprzedaży. Tutaj możesz sprzedać wszystko, co chcesz, od zbiorów upraw po nasiona i nawozy.
 Ceny sprzedaży będą się zmieniać i pojawiać na PDA / statystykach.
 Budynki mają automatyczne oświetlenie.
 
+Paski ostrzegawcze można włączać i wyłączać za pomocą wygodnego przycisku.
+
 Cena:       10.000 €
 Rozmiar:    13 x 12.5 Metrów
 
 -Jeśli znajdziesz jakieś błędy lub masz sugestie dotyczące ulepszeń, nie wahaj się skontaktować z nami na naszej stronie Github pod adresem https://github.com/FS19-Mods-By-EDGE/
-lub Skontaktuj się z EDGEPureGaming na Facebook.]]></pl>
+lub Skontaktuj się z EDGEPureGaming na Facebooku.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></pl>
         <it><![CDATA[Stazione di vendita multipla. Qui puoi vendere tutto ciò che desideri, dalla raccolta delle colture ai semi e ai fertilizzanti.
 I prezzi di vendita fluttueranno e compariranno sulle statistiche.
-Gli edifici hanno illuminazione automatica.
+
+Le strisce di avvertimento possono essere attivate e disattivate con un comodo pulsante.
 
 Prezzo: 10.000 €
 Dimensioni: 13 x 12,5 metri
 
 -Se trovi qualche bug o hai suggerimenti per l'improvvisazione, non esitare a contattarci sulla nostra pagina Github all'indirizzo https://github.com/FS19-Mods-By-EDGE/
-o Contatta EDGEPureGaming su Facebook.]]></it>
+o Contatta EDGEPureGaming su Facebook.
+We also need help with translations, that can also be done there. (you will ofcourse be credited in the mod.)]]></it>
     </description>
     <multiplayer supported="true"/>
     <storeItems>
@@ -105,11 +125,20 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
         <text name="name_MultiSellingStation_Black">
             <en>Multi Selling Station Black</en>
             <de>Multi Verkaufsstation Schwarze</de>
-            <fr>Poste De Vente Multiple noir</fr>
+            <fr>Poste De Vente Multiple or</fr>
             <es>Estación De Venta Múltiple Negra</es>
             <ru>Многоцелевая станция черного</ru>
             <pl>Stacja sprzedaży Multi Czarny</pl>
             <it>Multi stazione di vendita nera</it>
+        </text>
+        <text name="name_MultiSellingStation_Gold">
+            <en>Multi Selling Station Gold</en>
+            <de>Multi Verkaufsstation Gold</de>
+            <fr>Poste De Vente Multiple noir</fr>
+            <es>Estación De Venta Múltiple Gold</es>
+            <ru>Многоцелевая станция золото</ru>
+            <pl>Stacja sprzedaży Multi złota</pl>
+            <it>Multi stazione di vendita oro</it>
         </text>
         <text name="function_MultiSellingStation">
             <en>Multi Selling Station, Here you can sell anything you'd like, From crop harvest to seeds and fertilizer.</en>
@@ -119,6 +148,24 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <ru>Мультипродажная станция. Здесь вы можете продать все, что захотите, от сбора урожая до семян и удобрений.</ru>
             <pl>Stacja Sprzedaży. Tutaj możesz sprzedać wszystko, co chcesz, od zbiorów upraw po nasiona i nawozy.</pl>
             <it>Stazione di vendita multipla, qui puoi vendere tutto ciò che desideri, dalla raccolta delle colture ai semi e ai fertilizzanti.</it>
+        </text>
+        <text name="function_EDGELights">
+            <en>This Building have Automatic Lighting.</en>
+            <de>Dieses Gebäude verfügt über eine automatische Beleuchtung.</de>
+            <fr>Ce bâtiment a l'éclairage automatique.</fr>
+            <es>Este edificio tiene iluminación automática.</es>
+            <ru>Это здание имеет автоматическое освещение.</ru>
+            <pl>Ten budynek ma automatyczne oświetlenie.</pl>
+            <it>Questo edificio ha l'illuminazione automatica.</it>
+        </text>
+        <text name="function_EDGEBox">
+            <en>You can find a switchbox nearby, Check it out.</en>
+            <de>Sie finden eine Schaltbox in der Nähe.</de>
+            <fr>Vous pouvez trouver une boîte de commutation à proximité, vérifiez-la.</fr>
+            <es>Puedes encontrar una caja de interruptores cerca, compruébalo.</es>
+            <ru>Рядом можно найти распределительную коробку, зацените.</ru>
+            <pl>Możesz znaleźć skrzynkę rozdzielczą w pobliżu, sprawdź to.</pl>
+            <it>Puoi trovare un quadro elettrico nelle vicinanze, dai un'occhiata.</it>
         </text>
         <text name="GrainExpress">
             <en>EDGE Grain Vault</en>
@@ -138,6 +185,15 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <pl>EDGE Skarbiec Ziarna czarny</pl>
             <it>Bordo di grano EDGE Nero</it>
         </text>
+        <text name="GrainExpressGold">
+            <en>EDGE Grain Vault Gold</en>
+            <de>EDGE Getreidewölbung Gold</de>
+            <fr>EDGE Coffre À Grains or</fr>
+            <es>EDGE Bóveda De Grano Gold</es>
+            <ru>EDGE Хранилище Зерна золото</ru>
+            <pl>EDGE Skarbiec Ziarna złota</pl>
+            <it>Bordo di grano EDGE oro</it>
+        </text>
         <text name="action_turnOnMarking">
             <en>Show warning Stripes</en>
             <de>Eckmarkierungen einblenden</de>
@@ -155,6 +211,87 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <ru>Скрыть предупреждение полосы</ru>
             <pl>Ukryj paski ostrzegawcze</pl>
             <it>Nascondi le strisce di avvertimento</it>
+        </text>
+        <text name="action_toggleFillmark_on">
+            <en>Show Fillmark</en>
+            <de>Füllmarkierung anzeigen</de>
+            <fr>Afficher la marque de remplissage</fr>
+            <es>Mostrar marca de relleno</es>
+            <ru>Показать отметку заполнения</ru>
+            <pl>Pokaż znak wypełnienia</pl>
+            <it>Mostra segno di riempimento</it>
+        </text>
+        <text name="action_toggleFillmark_off">
+            <en>Hide Fillmark</en>
+            <de>Füllmarkierung ausblenden</de>
+            <fr>Masquer la marque de remplissage</fr>
+            <es>Ocultar marca de relleno</es>
+            <ru>Скрыть отметку заполнения</ru>
+            <pl>Ukryj znak wypełnienia</pl>
+            <it>Nascondi segno di riempimento</it>
+        </text>
+        <!--<text name="action_turnOnSwitchBox">
+            <en>Show Switchbox</en>
+            <de>Switchbox anzeigen</de>
+            <fr>Afficher Switchbox</fr>
+            <es>Mostrar Switchbox</es>
+            <ru>Показать Switchbox</ru>
+            <pl>Pokaż Switchbox</pl>
+            <it>Mostra Switchbox</it>
+        </text>
+        <text name="action_turnOffSwitchBox">
+            <en>Hide Switchbox</en>
+            <de>Switchbox ausblenden</de>
+            <fr>Masquer la boîte de commutation</fr>
+            <es>Ocultar Switchbox</es>
+            <ru>Скрыть переключатель</ru>
+            <pl>Ukryj Switchbox</pl>
+            <it>Nascondi Switchbox</it>
+        </text>-->
+        <text name="action_turnOnIcon">
+            <en>Show Trigger Icon</en>
+            <de>Triggersymbol anzeigen</de>
+            <fr>Afficher l'icône de déclenchement</fr>
+            <es>Mostrar icono de activador</es>
+            <ru>Показать значок триггера</ru>
+            <pl>Pokaż ikonę wyzwalacza</pl>
+            <it>Mostra icona trigger</it>
+        </text>
+        <text name="action_turnOffIcon">
+            <en>Hide Trigger Icon</en>
+            <de>Triggersymbol ausblenden</de>
+            <fr>Masquer l'icône du déclencheur</fr>
+            <es>Ocultar icono de activador</es>
+            <ru>Скрыть значок триггера</ru>
+            <pl>Ukryj ikonę wyzwalacza</pl>
+            <it>Nascondi icona trigger</it>
+        </text>
+        <text name="action_lightOn">
+            <en>Switch lights on</en>
+            <de>Licht anschalten</de>
+            <fr>Allumer les lumières</fr>
+            <es>Enciende las luces</es>
+            <ru>Включите свет</ru>
+            <pl>Włącz światła</pl>
+            <it>Accendi le luci</it>
+        </text>
+        <text name="action_lightOff">
+            <en>Switch lights off</en>
+            <de>Licht ausschalten</de>
+            <fr>Éteindre les lumières</fr>
+            <es>Apagar las luces</es>
+            <ru>Выключить свет</ru>
+            <pl>Wyłącz światła</pl>
+            <it>Spegnere le luci</it>
+        </text>
+        <text name="action_lightAuto">
+            <en>Set Lights to Auto</en>
+            <de>Stellen Sie die Lichter auf Auto</de>
+            <fr>Réglez les lumières sur Auto</fr>
+            <es>Establecer luces en automático</es>
+            <ru>Установите свет на авто</ru>
+            <pl>Ustaw światła na Auto</pl>
+            <it>Imposta le luci su Auto</it>
         </text>
     </l10n>
     <placeableTypes>

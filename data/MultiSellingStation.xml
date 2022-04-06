@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.2.0.0/placeable.xsd">
     <storeData>
         <name>$l10n_name_MultiSellingStation</name>
         <functions>
             <function>$l10n_function_MultiSellingStation</function>
+            <function>$l10n_function_EDGELights</function>
+            <function>$l10n_function_EDGEBox</function>
         </functions>
         <image>store/StorePicture.dds</image>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
         <price>10000</price>
         <lifetime>1000</lifetime>
         <dailyUpkeep>0</dailyUpkeep>
@@ -13,55 +18,163 @@
         <brand>EDGE</brand>
         <species>placeable</species>
         <category>placeableMisc</category>
+		<brush>
+			<type>placeable</type>
+			<category>buildings</category>
+			<tab>tools</tab>
+		</brush>
     </storeData>
     <placeableType>sellingStation</placeableType>
-    <filename>data/MultiSellingStation.i3d</filename>
+    <base>
+		<filename>data/MultiSellingStation.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+	</base>
     <placement testSizeX="14" testSizeZ="14" sizeX="13" sizeZ="13" useRandomYRotation="false" useManualYRotation="true"/>
-    <dayNightObjects>
-        <dayNightObject node="5|0|0" visibleDay="false" visibleNight="true" intensityNight="0.6"/>
-        <dayNightObject node="6|1" visibleDay="false" visibleNight="true" intensityNight="0.6"/>
-    </dayNightObjects>
+    <lights>
+    	<realLights>
+    		<low>
+    			<light node="lightLow00" groupIndex="1"/>
+    			<light node="lightLow00" groupIndex="1"/>
+    		</low>
+    		<high>
+    			<light node="lightHigh00" groupIndex="1"/>
+    			<light node="lightHigh01" groupIndex="1"/>
+    		</high>
+    	</realLights>
+    		<group name="$l10n_action_lightAuto" activateTime="17:30" deactivateTime="8:20"/>
+    </lights>
     <clearAreas>
-        <clearArea startNode="3|0|0" widthNode="3|0|0|0" heightNode="3|0|0|1"/>
-        <clearArea startNode="3|0|1" widthNode="3|0|1|0" heightNode="3|0|1|1"/>
+        <levelArea startNode="start_0" widthNode="width_0" heightNode="height_0"/>
+        <clearArea startNode="start_1" widthNode="width_1" heightNode="height_1"/>
     </clearAreas>
-    <leveling requireLeveling="true" maxSmoothDistance="2.5" maxSlope="350" maxEdgeAngle="30">
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20">
         <levelAreas>
-            <levelArea startNode="3|0|0" widthNode="3|0|0|0" heightNode="3|0|0|1"/>
-            <levelArea startNode="3|0|1" widthNode="3|0|1|0" heightNode="3|0|1|1"/>
+            <levelArea startNode="start_0" widthNode="width_0" heightNode="height_0"/>
+            <clearArea startNode="start_1" widthNode="width_1" heightNode="height_1"/>
         </levelAreas>
     </leveling>
-    <seasons>
+    <!-- <seasons>
         <maskAreas>
-            <maskArea startNode="3|1|0" widthNode="3|1|0|0" heightNode="3|1|0|1"/>
+            <maskArea startNode="Start01" widthNode="Width" heightNode="Height"/>
         </maskAreas>
-    </seasons>
+    </seasons> -->
     <animatedObjects>
-		<animatedObject saveId="switch_01">
+        <animatedObject saveId="switch_01" >
+            <animation duration="0.1">
+                <part node="lever_0">
+                    <keyFrame time="0.0" rotation="90 0 0"/>
+                    <keyFrame time="1.0" rotation="-51 0 0"/>
+                </part>
+                <part node="col_2">
+                    <keyFrame time="0.0" visibility="true"/>
+					<keyFrame time="1" visibility="false" />
+                </part>
+                <part node="illum_0">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="1.0" visibility="false"/>
+                </part>
+                <part node="illum_1">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="1.0" visibility="false"/>
+                </part>
+                <part node="illum_2">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>
+            </animation>
+            <controls triggerNode="playerTrigger_0" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="naction_lightOff" />
+            <sounds>
+                <moving file="$data/sounds/player/flashlight/flashlight.ogg" loops="1" linkNode="lightswitch01" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="switch_02">
             <animation duration="0.5">
-                <part node="2|3|1|0">
-					<keyFrame time="0.0" rotation="-51 0 0"/>
-					<keyFrame time="1.0" rotation="90 0 0"/>
+                <part node="lever_1">
+					<keyFrame time="0.0" rotation="90 0 0"/>
+					<keyFrame time="1.0" rotation="-51 0 0"/>
 				</part>
-				<part node="7">
+				<part node="triggerIcons_Load">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="1.0" visibility="false" />
+                </part>
+				<part node="switchBox_marker">
+                    <keyFrame time="0.0" visibility="true" />
+                    <keyFrame time="1.0" visibility="false" />
+                </part>
+                <part node="illum_3">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="1.0" visibility="false"/>
+                </part>
+                <part node="illum_4">
                     <keyFrame time="0.0" visibility="false"/>
                     <keyFrame time="1.0" visibility="true"/>
                 </part>
-                <part node="2|3|1|2|0">
+            </animation>
+            <controls triggerNode="playerTrigger_1" posAction="ACTIVATE_HANDTOOL" posText="action_turnOffIcon" negText="action_turnOnIcon"/>
+            <sounds>
+                <moving file="$data/sounds/player/flashlight/flashlight.ogg" loops="1" linkNode="lightswitch_0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="switch_03" >
+            <animation duration="0.1">
+                <part node="lever_2">
+                    <keyFrame time="0.0" rotation="-51 0 0"/>
+                    <keyFrame time="1.0" rotation="90 0 0"/>
+                </part>
+                <part node="light">
+                    <keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+                </part>
+                <part node="illum_5">
                     <keyFrame time="0.0" visibility="false"/>
                     <keyFrame time="1.0" visibility="true"/>
                 </part>
-                <part node="2|3|1|3|0">
+                <part node="illum_6">
                     <keyFrame time="0.0" visibility="true"/>
                     <keyFrame time="1.0" visibility="false"/>
                 </part>
             </animation>
-            <controls triggerNode="2|3|0" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnMarking" negText="action_turnOffMarking"/>
+            <controls triggerNode="playerTrigger_2" posAction="ACTIVATE_HANDTOOL" posText="action_toggleFillmark_on" negText="action_toggleFillmark_off" />
+            <sounds>
+                <moving file="$data/sounds/player/flashlight/flashlight.ogg" loops="1" linkNode="lightswitch_1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="switch_04">
+            <animation duration="0.5">
+                <part node="lever_3">
+                    <keyFrame time="0.0" rotation="-51 0 0"/>
+                    <keyFrame time="1.0" rotation="90 0 0"/>
+                </part>
+                <part node="warningStripes">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>
+                <part node="illum_7">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>
+                <part node="illum_8">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="1.0" visibility="false"/>
+                </part>
+            </animation>
+            <controls triggerNode="playerTrigger_3" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnMarking" negText="action_turnOffMarking"/>
+            <sounds>
+                <moving file="$data/sounds/player/flashlight/flashlight.ogg" loops="1" linkNode="lightswitch_2" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
         </animatedObject>
     </animatedObjects>
     <tipOcclusionUpdateArea sizeX="13" sizeZ="13"/>
+    <ai>
+		<updateAreas>
+			<updateArea startNode="tipOcclusionAreaStart" endNode="width_2" />
+		</updateAreas>
+	</ai>
+    <weighingStation triggerNode="weighingTrigger">
+        <display node="displayNode1" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
+    </weighingStation>
     <sellingStation stationName="$l10n_GrainExpress" appearsOnPDA="true" appearsOnStats="true" storageRadius="0" litersForFullPriceDrop="150000" fullPriceRecoverHours="52" showHotspotText="false">
-        <unloadTrigger exactFillRootNode="1|0|0|0" baleTriggerNode="1|0|0|2" sellTriggerNode="1|0|0|1|2"/>
+        <unloadTrigger exactFillRootNode="exactFillRootNode" baleTriggerNode="baleDestroyerTrigger" sellTriggerNode="StrawShovelTarget"/>
         <fillType name="wheat"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="barley" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="oat"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -143,7 +256,6 @@
         <fillType name="fisch1"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="krabben"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="hummer" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="butter"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="vollmilch"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="sahne"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="joghurt" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -157,7 +269,6 @@
         <fillType name="woodsections" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="charcoal"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="barrel"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="honey" 		      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="met"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="cerealmeal"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="boiledpotatoes"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -173,6 +284,35 @@
 		<fillType name="alfalfaPellets"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="rum"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="met"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="olive"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="SUGARBEET_CUT"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="ELECTRICCHARGE"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="METHANE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="ROADSALT"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="FLOUR"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="BREAD"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CAKE"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="BUTTER"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CHEESE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="FABRIC"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CLOTHES"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SUGAR"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="HONEY"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CEREAL"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SUNFLOWER_OIL"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CANOLA_OIL"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="OLIVE_OIL"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="RAISINS"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="GRAPEJUICE"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="LETTUCE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="TOMATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="STRAWBERRY"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CHOCOLATE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="BOARDS"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="FURNITURE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SILAGE_ADDITIVE"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="MINERAL_FEED"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="STONE"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<!-- MAIZE Plus -->
 		<fillType name="choppedmaize" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="choppedmaize_fermented"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -218,7 +358,6 @@
 		<fillType name="drylucerne_windrow" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="clover"  	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="clover_windrow"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="lettuce"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cabbage"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="redCabbage"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<!-- PotatoWasher -->
@@ -230,10 +369,8 @@
 		<!-- PlumFactory -->
 		<fillType name="plum"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<!-- Suedhemmern -->
-		<fillType name="flour"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="dflour"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="peat"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="sugar"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cherry"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="rum"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="asparagus"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -244,7 +381,6 @@
 		<fillType name="beer"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="bean"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cookingoil"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="bread"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="potatoPancake"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="coleslaw"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="paper"    	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -262,9 +398,7 @@
 		<fillType name="wholeGrain"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="deadAnimal"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="rubintt"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="cheese"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="goatCheese"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="butter"       	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="fertipro"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="badmixture"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="nitrogen"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -274,7 +408,6 @@
 		<fillType name="apple"     		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pear"     		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="lettuceSeedlings" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="tomato" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="redPepper" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="badFeed" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="doughling" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -319,7 +452,6 @@
 		<fillType name="apricot"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="banana"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pear"   		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="strawBerry"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="raspBerry"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cherry"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="kiwiFruit"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -341,8 +473,6 @@
 		<fillType name="paprika"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pepperoni"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="mushrooms"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="lettuce"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="tomato"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cinnamon"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 			<!-- Tierfutter -->
 		<fillType name="ccm"    	  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -400,9 +530,7 @@
 		<fillType name="beer"   		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="bioMilk"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pearJuice"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="bread"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="bun"      	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="butter"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="speltFlour"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="strawBerryJuice"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="vinegar"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -414,7 +542,6 @@
 		<fillType name="oatFlour"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="rapsBerryJuice"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="milletFLour"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="honey"     		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="honeyMilk"     	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="yoghurt"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="coffee" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -423,10 +550,8 @@
 		<fillType name="cherryJuice" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="kiwiJuice" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="caffeine" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="cake" 	  		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="lemonade"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="mayonaisse"  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="flour"  	  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="noodles"  	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="bakedPotato"  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="orangeJuice"  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -454,7 +579,6 @@
 		<fillType name="strongBeer"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="steak"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="tomatoJuice" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="grapeJuice" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="triticaleFlour"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="waterMelonJuice"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="wine" 		  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -466,7 +590,6 @@
 		<fillType name="vodka"  	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="sausage"  	  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="goatMilk"  	  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="sugar"  	  	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 			<!-- Baugüter -->
 		<fillType name="overburden"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="asphalt"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -481,7 +604,6 @@
 		<fillType name="coal"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pavingStone"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="salt"       	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="stone"       	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="stoneSalt"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="tar"      		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 			<!-- sonstige Güter -->
@@ -494,7 +616,6 @@
 		<fillType name="malt" 			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="molasses" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="waste" 			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="fabric" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="brewersGrain" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pomace" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cigarette" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -503,10 +624,148 @@
 		<fillType name="bioDiesel" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="crudeOil"  		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
     </sellingStation>
-	<triggerMarkers>
-        <triggerMarker node="7|0"/>
-        <triggerMarker node="7|0"/>
-        <triggerMarker node="7|0"/>
-        <triggerMarker node="7|0"/>
+    <triggerMarkers>
+        <triggerMarker node="warningStripesCorner1"/>
+        <triggerMarker node="warningStripesCorner2"/>
+        <triggerMarker node="warningStripesCorner3"/>
+        <triggerMarker node="warningStripesCorner4"/>
+        <triggerMarker node="wrench_marker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
     </triggerMarkers>
+    <i3dMappings>
+        <i3dMapping id="MultiSellingStation" node="0>" />
+        <i3dMapping id="logoEDGE" node="0>0" />
+        <i3dMapping id="gameplay" node="0>1" />
+        <i3dMapping id="IN" node="0>1|0" />
+        <i3dMapping id="triggerPos" node="0>1|0|0" />
+        <i3dMapping id="exactFillRootNode" node="0>1|0|0|0" />
+        <i3dMapping id="StrawTrigger" node="0>1|0|0|1" />
+        <i3dMapping id="triggerStart" node="0>1|0|0|1|0" />
+        <i3dMapping id="triggerEnd" node="0>1|0|0|1|1" />
+        <i3dMapping id="StrawShovelTarget" node="0>1|0|0|1|2" />
+        <i3dMapping id="baleDestroyerTrigger" node="0>1|0|0|2" />
+        <i3dMapping id="storageFarm" node="0>1|1" />
+        <i3dMapping id="mapPosition" node="0>1|2" />
+        <i3dMapping id="switchBox00" node="0>1|3" />
+        <i3dMapping id="col_0" node="0>1|3|0" />
+        <i3dMapping id="switch_01" node="0>1|3|1" />
+        <i3dMapping id="playerTrigger_0" node="0>1|3|1|0" />
+        <i3dMapping id="lightswitch01" node="0>1|3|1|1" />
+        <i3dMapping id="lever_0" node="0>1|3|1|1|0" />
+        <i3dMapping id="onButton_0" node="0>1|3|1|1|1" />
+        <i3dMapping id="illum_0" node="0>1|3|1|1|1|0" />
+        <i3dMapping id="spotLight_0" node="0>1|3|1|1|1|0|0" />
+        <i3dMapping id="on_illum_0" node="0>1|3|1|1|1|0|1" />
+        <i3dMapping id="autoButton" node="0>1|3|1|1|2" />
+        <i3dMapping id="illum_1" node="0>1|3|1|1|2|0" />
+        <i3dMapping id="spotLight_1" node="0>1|3|1|1|2|0|0" />
+        <i3dMapping id="auto_illum" node="0>1|3|1|1|2|0|1" />
+        <i3dMapping id="offButton_0" node="0>1|3|1|1|3" />
+        <i3dMapping id="illum_2" node="0>1|3|1|1|3|0" />
+        <i3dMapping id="spotLight_2" node="0>1|3|1|1|3|0|0" />
+        <i3dMapping id="off_illum_0" node="0>1|3|1|1|3|0|1" />
+        <i3dMapping id="switch_02" node="0>1|3|2" />
+        <i3dMapping id="playerTrigger_1" node="0>1|3|2|0" />
+        <i3dMapping id="lightswitch_0" node="0>1|3|2|1" />
+        <i3dMapping id="lever_1" node="0>1|3|2|1|0" />
+        <i3dMapping id="onButton_1" node="0>1|3|2|1|1" />
+        <i3dMapping id="illum_3" node="0>1|3|2|1|1|0" />
+        <i3dMapping id="spotLight_3" node="0>1|3|2|1|1|0|0" />
+        <i3dMapping id="on_illum_1" node="0>1|3|2|1|1|0|1" />
+        <i3dMapping id="offButton_1" node="0>1|3|2|1|2" />
+        <i3dMapping id="illum_4" node="0>1|3|2|1|2|0" />
+        <i3dMapping id="spotLight_4" node="0>1|3|2|1|2|0|0" />
+        <i3dMapping id="off_illum_1" node="0>1|3|2|1|2|0|1" />
+        <i3dMapping id="switch_03" node="0>1|3|3" />
+        <i3dMapping id="playerTrigger_2" node="0>1|3|3|0" />
+        <i3dMapping id="lightswitch_1" node="0>1|3|3|1" />
+        <i3dMapping id="lever_2" node="0>1|3|3|1|0" />
+        <i3dMapping id="onButton_2" node="0>1|3|3|1|1" />
+        <i3dMapping id="illum_5" node="0>1|3|3|1|1|0" />
+        <i3dMapping id="spotLight_5" node="0>1|3|3|1|1|0|0" />
+        <i3dMapping id="on_illum_2" node="0>1|3|3|1|1|0|1" />
+        <i3dMapping id="offButton_2" node="0>1|3|3|1|2" />
+        <i3dMapping id="illum_6" node="0>1|3|3|1|2|0" />
+        <i3dMapping id="spotLight_6" node="0>1|3|3|1|2|0|0" />
+        <i3dMapping id="off_illum_2" node="0>1|3|3|1|2|0|1" />
+        <i3dMapping id="switch_04" node="0>1|3|4" />
+        <i3dMapping id="playerTrigger_3" node="0>1|3|4|0" />
+        <i3dMapping id="lightswitch_2" node="0>1|3|4|1" />
+        <i3dMapping id="lever_3" node="0>1|3|4|1|0" />
+        <i3dMapping id="onButton_3" node="0>1|3|4|1|1" />
+        <i3dMapping id="illum_7" node="0>1|3|4|1|1|0" />
+        <i3dMapping id="spotLight_7" node="0>1|3|4|1|1|0|0" />
+        <i3dMapping id="on_illum_3" node="0>1|3|4|1|1|0|1" />
+        <i3dMapping id="offButton_3" node="0>1|3|4|1|2" />
+        <i3dMapping id="illum_8" node="0>1|3|4|1|2|0" />
+        <i3dMapping id="spotLight_8" node="0>1|3|4|1|2|0|0" />
+        <i3dMapping id="off_illum_3" node="0>1|3|4|1|2|0|1" />
+        <i3dMapping id="sign" node="0>1|3|5" />
+        <i3dMapping id="logo" node="0>1|3|5|0" />
+        <i3dMapping id="switchBox_marker" node="0>1|3|6" />
+        <i3dMapping id="wrench_marker" node="0>1|3|6|0" />
+        <i3dMapping id="switchableMark" node="0>1|4" />
+        <i3dMapping id="mark" node="0>1|4|0" />
+        <i3dMapping id="light" node="0>1|4|0|0" />
+        <i3dMapping id="pointLight_0" node="0>1|4|0|0|0" />
+        <i3dMapping id="lightMark" node="0>1|4|0|0|1" />
+        <i3dMapping id="triggerIcons_Load" node="0>1|5" />
+        <i3dMapping id="illum_9" node="0>1|5|0" />
+        <i3dMapping id="pointLight_1" node="0>1|5|0|0" />
+        <i3dMapping id="MultiFillingStation_vis" node="0>2" />
+        <i3dMapping id="farmSiloSmallUnloadingPipe" node="0>2|0" />
+        <i3dMapping id="signBack" node="0>2|1" />
+        <i3dMapping id="signSeed" node="0>2|1|0" />
+        <i3dMapping id="banner" node="0>2|1|1" />
+        <i3dMapping id="logoBanner" node="0>2|1|1|0" />
+        <i3dMapping id="signRound_0" node="0>2|2" />
+        <i3dMapping id="logoRound_0" node="0>2|2|0" />
+        <i3dMapping id="industrialHatch" node="0>2|3" />
+        <i3dMapping id="col_1" node="0>2|3|0" />
+        <i3dMapping id="signRound_1" node="0>2|4" />
+        <i3dMapping id="logoRound_1" node="0>2|4|0" />
+        <i3dMapping id="areaDefinitions" node="0>3" />
+        <i3dMapping id="start_0" node="0>3|0" />
+        <i3dMapping id="width_0" node="0>3|0|0" />
+        <i3dMapping id="height_0" node="0>3|0|1" />
+        <i3dMapping id="snowAreas" node="0>3|1" />
+        <i3dMapping id="Start01" node="0>3|1|0" />
+        <i3dMapping id="Width" node="0>3|1|0|0" />
+        <i3dMapping id="Height" node="0>3|1|0|1" />
+        <i3dMapping id="start_1" node="0>3|2" />
+        <i3dMapping id="width_1" node="0>3|2|0" />
+        <i3dMapping id="height_1" node="0>3|2|1" />
+        <i3dMapping id="tipOcclusionAreaStart" node="0>3|3" />
+        <i3dMapping id="width_2" node="0>3|3|0" />
+        <i3dMapping id="tipCol" node="0>4" />
+        <i3dMapping id="floodLight" node="0>5" />
+        <i3dMapping id="floodLight_lamp" node="0>5|0" />
+        <i3dMapping id="illum_10" node="0>5|0|0" />
+        <i3dMapping id="glass_0" node="0>5|0|0|0" />
+        <i3dMapping id="lightHigh00" node="0>5|0|0|1" />
+        <i3dMapping id="spotLight00" node="0>5|0|0|1|0" />
+        <i3dMapping id="lightLow00" node="0>5|0|0|2" />
+        <i3dMapping id="spotLight01" node="0>5|0|0|2|0" />
+        <i3dMapping id="streetLight" node="0>6" />
+        <i3dMapping id="illum_Auto" node="0>6|0" />
+        <i3dMapping id="illum_11" node="0>6|0|0" />
+        <i3dMapping id="glass_1" node="0>6|0|0|0" />
+        <i3dMapping id="lightHigh01" node="0>6|0|0|1" />
+        <i3dMapping id="spotLight02" node="0>6|0|0|1|0" />
+        <i3dMapping id="lightLow01" node="0>6|0|0|2" />
+        <i3dMapping id="spotLight03" node="0>6|0|0|2|0" />
+        <i3dMapping id="col_2" node="0>6|1" />
+        <i3dMapping id="warningStripes" node="0>7" />
+        <i3dMapping id="warningStripesCorner1" node="0>7|0" />
+        <i3dMapping id="warningStripesCorner2" node="0>7|1" />
+        <i3dMapping id="warningStripesCorner3" node="0>7|2" />
+        <i3dMapping id="warningStripesCorner4" node="0>7|3" />
+        <i3dMapping id="weighingStation_0" node="0>8" />
+        <i3dMapping id="weighingStation_1" node="0>8|0" />
+        <i3dMapping id="weighingTrigger" node="0>8|0|0" />
+        <i3dMapping id="displayNode1" node="0>8|0|1" />
+        <i3dMapping id="visuals" node="0>8|1" />
+        <i3dMapping id="winter" node="0>8|1|0" />
+        <i3dMapping id="display" node="0>8|1|1" />
+        <i3dMapping id="weighingStation_vis" node="0>8|1|2" />
+    </i3dMappings>
 </placeable>
