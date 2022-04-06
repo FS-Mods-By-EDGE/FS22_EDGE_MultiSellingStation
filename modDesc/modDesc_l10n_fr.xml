@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Coffre À Grains"/>
+		<text name="GrainExpressBlack"    					text="EDGE Coffre À Grains Noir"/>
+		<text name="GrainExpressGold"    					text="EDGE Coffre À Grains or"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Afficher les rayures d'avertissement"/>
+		<text name="action_turnOffMarking"    				text="Masquer les bandes d'avertissement"/>
+		<text name="action_toggleFillmark_on"    			text="Afficher la marque de remplissage"/>
+		<text name="action_toggleFillmark_off"    			text="Masquer la marque de remplissage"/>
+		<text name="action_turnOnIcon"    					text="Afficher l'icône de déclenchement"/>
+		<text name="action_turnOffIcon"    					text="Masquer l'icône du déclencheur"/>
+		<text name="action_lightOn"    						text="Allumer les lumières"/>
+		<text name="action_lightOff"    					text="Éteindre les lumières"/>
+		<text name="action_lightAuto"    					text="Réglez les lumières sur Auto"/>
+	</texts>
+</l10n>

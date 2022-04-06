@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Getreidewölbung"/>
+		<text name="GrainExpressBlack"    					text="EDGE Getreidewölbung Schwarz"/>
+		<text name="GrainExpressGold"    					text="EDGE Getreidewölbung Gold"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Triggersymbol anzeigen"/>
+		<text name="action_turnOffMarking"    				text="Triggersymbol ausblenden"/>
+		<text name="action_toggleFillmark_on"    			text="Füllmarkierung anzeigen"/>
+		<text name="action_toggleFillmark_off"    			text="Füllmarkierung ausblenden"/>
+		<text name="action_turnOnIcon"    					text="Triggersymbol anzeigen"/>
+		<text name="action_turnOffIcon"    					text="Triggersymbol ausblenden"/>
+		<text name="action_lightOn"    						text="Licht anschalten"/>
+		<text name="action_lightOff"    					text="Licht ausschalten"/>
+		<text name="action_lightAuto"    					text="Stellen Sie die Lichter auf Auto"/>
+	</texts>
+</l10n>

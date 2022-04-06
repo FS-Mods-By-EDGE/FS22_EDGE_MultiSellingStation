@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.2.0.0/placeable.xsd">
+<placeable type="EDGEsellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.2.0.0/placeable.xsd">
     <storeData>
         <name>$l10n_name_MultiSellingStation_Gold</name>
         <functions>
@@ -17,24 +17,29 @@
         <rotation>0</rotation>
         <brand>EDGE</brand>
         <species>placeable</species>
-        <category>placeableMisc</category>
+        <category>sellingPoints</category>
 		<brush>
 			<type>placeable</type>
-			<category>buildings</category>
-			<tab>tools</tab>
+			<category>production</category>
+			<tab>sellingPoints</tab>
 		</brush>
     </storeData>
-    <placeableType>sellingStation</placeableType>
     <base>
 		<filename>data/MultiSellingStationGold.i3d</filename>
 		<canBeRenamed>true</canBeRenamed>
 	</base>
-    <placement testSizeX="14" testSizeZ="14" sizeX="13" sizeZ="13" useRandomYRotation="false" useManualYRotation="true"/>
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+        <sounds>
+            <place template="siloImp" />
+        </sounds>
+    </placement>
     <lights>
     	<realLights>
     		<low>
-    			<light node="lightLow00" groupIndex="1"/>
-    			<light node="lightLow00" groupIndex="1"/>
+    			<light node="lightLow01" groupIndex="1"/>
     		</low>
     		<high>
     			<light node="lightHigh00" groupIndex="1"/>
@@ -44,13 +49,13 @@
     		<group name="$l10n_action_lightAuto" activateTime="17:30" deactivateTime="8:20"/>
     </lights>
     <clearAreas>
-        <levelArea startNode="start_0" widthNode="width_0" heightNode="height_0"/>
+        <clearArea startNode="start_0" widthNode="width_0" heightNode="height_0"/>
         <clearArea startNode="start_1" widthNode="width_1" heightNode="height_1"/>
     </clearAreas>
     <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20">
         <levelAreas>
             <levelArea startNode="start_0" widthNode="width_0" heightNode="height_0"/>
-            <clearArea startNode="start_1" widthNode="width_1" heightNode="height_1"/>
+            <levelArea startNode="start_1" widthNode="width_1" heightNode="height_1"/>
         </levelAreas>
     </leveling>
     <!-- <seasons>
@@ -58,6 +63,7 @@
             <maskArea startNode="Start01" widthNode="Width" heightNode="Height"/>
         </maskAreas>
     </seasons> -->
+    <indoorAreas/>
     <animatedObjects>
         <animatedObject saveId="switch_01" >
             <animation duration="0.1">
@@ -65,7 +71,7 @@
                     <keyFrame time="0.0" rotation="90 0 0"/>
                     <keyFrame time="1.0" rotation="-51 0 0"/>
                 </part>
-                <part node="col_2">
+                <part node="illum_11">
                     <keyFrame time="0.0" visibility="true"/>
 					<keyFrame time="1" visibility="false" />
                 </part>
@@ -82,7 +88,7 @@
                     <keyFrame time="1.0" visibility="true"/>
                 </part>
             </animation>
-            <controls triggerNode="playerTrigger_0" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="naction_lightOff" />
+            <controls triggerNode="playerTrigger_0" posAction="ACTIVATE_HANDTOOL" posText="action_lightOff" negText="action_lightOn" />
             <sounds>
                 <moving file="$data/sounds/player/flashlight/flashlight.ogg" loops="1" linkNode="lightswitch01" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
             </sounds>
@@ -164,17 +170,26 @@
             </sounds>
         </animatedObject>
     </animatedObjects>
-    <tipOcclusionUpdateArea sizeX="13" sizeZ="13"/>
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionAreaStart" endNode="width_2" />
+    </tipOcclusionUpdateAreas>
     <ai>
 		<updateAreas>
 			<updateArea startNode="tipOcclusionAreaStart" endNode="width_2" />
 		</updateAreas>
 	</ai>
+    <hotspots>
+        <hotspot text="$l10n_GrainExpressGold" type="UNLOADING" linkNode="mapPosition" />
+    </hotspots>
     <weighingStation triggerNode="weighingTrigger">
         <display node="displayNode1" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
+        <display node="displayNode2" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
     </weighingStation>
-    <sellingStation stationName="$l10n_GrainExpressGold" appearsOnPDA="true" appearsOnStats="true" storageRadius="0" litersForFullPriceDrop="150000" fullPriceRecoverHours="52" showHotspotText="false">
-        <unloadTrigger exactFillRootNode="exactFillRootNode" baleTriggerNode="baleDestroyerTrigger" sellTriggerNode="StrawShovelTarget"/>
+    <sellingStation stationName="$l10n_GrainExpressGold" node="storageFarm" appearsOnPDA="true" appearsOnStats="true" supportsExtension="false" storageRadius="0" litersForFullPriceDrop="150000" fullPriceRecoverHours="52" showHotspotText="false">
+        <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="triggerPos" sellTriggerNode="StrawShovelTarget" fillTypeCategories="FARMSILO BULK LIQUID PIECE WINDROW COMBINE SPRAYER SPREADER MIXERWAGON AUGERWAGON FORAGEWAGON SILAGETRAILER TRAINWAGON FORAGEHARVESTER SLURRYTANK MANURESPREADER FORK SHOVEL FARMSILO HAYLOFT LOADINGVEHICLE PRODUCT PRODUCT_BGA">
+			<baleTrigger triggerNode="baleDestroyerTrigger" aiNode="triggerPos" deleteLitersPerSecond="10000"/>
+			<woodTrigger triggerNode="woodTrigger" aiNode="triggerPos" activationTriggerNode="woodSellTrigger" />
+		</unloadTrigger>
         <fillType name="wheat"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="barley" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="oat"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -313,6 +328,7 @@
         <fillType name="SILAGE_ADDITIVE"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="MINERAL_FEED"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="STONE"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="WOOD"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<!-- MAIZE Plus -->
 		<fillType name="choppedmaize" 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="choppedmaize_fermented"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -629,16 +645,22 @@
         <triggerMarker node="warningStripesCorner2"/>
         <triggerMarker node="warningStripesCorner3"/>
         <triggerMarker node="warningStripesCorner4"/>
+        <triggerMarker node="illum_9" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
         <triggerMarker node="wrench_marker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
+        <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
     </triggerMarkers>
     <i3dMappings>
+        <i3dMapping id="testArea1Start" node="0>3|4" />
+        <i3dMapping id="testArea1End" node="0>3|4|0" />
         <i3dMapping id="MultiSellingStation" node="0>" />
         <i3dMapping id="logoEDGE" node="0>0" />
         <i3dMapping id="gameplay" node="0>1" />
         <i3dMapping id="IN" node="0>1|0" />
         <i3dMapping id="triggerPos" node="0>1|0|0" />
         <i3dMapping id="exactFillRootNode" node="0>1|0|0|0" />
-        <i3dMapping id="StrawTrigger" node="0>1|0|0|1" />
+        <i3dMapping id="woodTrigger" node="0>1|0|0|1" />
+        <i3dMapping id="woodSellTrigger" node="0>1|6" />
+        <i3dMapping id="woodSellTriggerMarker" node="0>1|6|0" />
         <i3dMapping id="triggerStart" node="0>1|0|0|1|0" />
         <i3dMapping id="triggerEnd" node="0>1|0|0|1|1" />
         <i3dMapping id="StrawShovelTarget" node="0>1|0|0|1|2" />

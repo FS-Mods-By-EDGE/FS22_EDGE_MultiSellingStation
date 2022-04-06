@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Grain Vault"/>
+		<text name="GrainExpressBlack"    					text="EDGE Grain Vault Black"/>
+		<text name="GrainExpressGold"    					text="EDGE Grain Vault Gold"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Show warning Stripes"/>
+		<text name="action_turnOffMarking"    				text="Hide warning Stripes"/>
+		<text name="action_toggleFillmark_on"    			text="Show Fillmark"/>
+		<text name="action_toggleFillmark_off"    			text="Hide Fillmark"/>
+		<text name="action_turnOnIcon"    					text="Show Trigger Icon"/>
+		<text name="action_turnOffIcon"    					text="Hide Trigger Icon"/>
+		<text name="action_lightOn"    						text="Switch lights on"/>
+		<text name="action_lightOff"    					text="Switch lights off"/>
+		<text name="action_lightAuto"    					text="Set Lights to Auto"/>
+	</texts>
+</l10n>

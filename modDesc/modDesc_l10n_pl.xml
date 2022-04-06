@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Skarbiec Ziarna"/>
+		<text name="GrainExpressBlack"    					text="EDGE Skarbiec Ziarna czarny"/>
+		<text name="GrainExpressGold"    					text="EDGE Skarbiec Ziarna złota"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Pokaż paski ostrzegawcze"/>
+		<text name="action_turnOffMarking"    				text="Ukryj paski ostrzegawcze"/>
+		<text name="action_toggleFillmark_on"    			text="Pokaż znak wypełnienia"/>
+		<text name="action_toggleFillmark_off"    			text="Ukryj znak wypełnienia"/>
+		<text name="action_turnOnIcon"    					text="Pokaż ikonę wyzwalacza"/>
+		<text name="action_turnOffIcon"    					text="Ukryj ikonę wyzwalacza"/>
+		<text name="action_lightOn"    						text="Włącz światła"/>
+		<text name="action_lightOff"    					text="Wyłącz światła"/>
+		<text name="action_lightAuto"    					text="Ustaw światła na Auto"/>
+	</texts>
+</l10n>

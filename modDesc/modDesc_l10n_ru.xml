@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Хранилище Зерна"/>
+		<text name="GrainExpressBlack"    					text="EDGE Хранилище Зерна Черный"/>
+		<text name="GrainExpressGold"    					text="EDGE Хранилище Зерна золото"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Показать предупреждение полосы"/>
+		<text name="action_turnOffMarking"    				text="Скрыть предупреждение полосы"/>
+		<text name="action_toggleFillmark_on"    			text="Показать отметку заполнения"/>
+		<text name="action_toggleFillmark_off"    			text="Скрыть отметку заполнения"/>
+		<text name="action_turnOnIcon"    					text="Показать значок триггера"/>
+		<text name="action_turnOffIcon"    					text="Скрыть значок триггера"/>
+		<text name="action_lightOn"    						text="Включите свет"/>
+		<text name="action_lightOff"    					text="Выключить свет"/>
+		<text name="action_lightAuto"    					text="Установите свет на авто"/>
+	</texts>
+</l10n>

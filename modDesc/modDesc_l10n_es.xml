@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="EDGE Bóveda De Grano"/>
+		<text name="GrainExpressBlack"    					text="EDGE Bóveda De Grano Negra"/>
+		<text name="GrainExpressGold"    					text="EDGE Bóveda De Grano Gold"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Mostrar franjas de advertencia"/>
+		<text name="action_turnOffMarking"    				text="Ocultar rayas de advertencia"/>
+		<text name="action_toggleFillmark_on"    			text="Mostrar marca de relleno"/>
+		<text name="action_toggleFillmark_off"    			text="Ocultar marca de relleno"/>
+		<text name="action_turnOnIcon"    					text="Mostrar icono de activador"/>
+		<text name="action_turnOffIcon"    					text="Ocultar icono de activador"/>
+		<text name="action_lightOn"    						text="Enciende las luces"/>
+		<text name="action_lightOff"    					text="Apagar las luces"/>
+		<text name="action_lightAuto"    					text="Establecer luces en automático"/>
+	</texts>
+</l10n>

@@ -111,8 +111,7 @@ We also need help with translations, that can also be done there. (you will ofco
     <brands>
         <brand name="EDGE" title="EDGE Industries" image="store/EDGE_Brand_Logo.dds"/>
     </brands>
-    <l10n>
-        <!-- <text name="typeDesc_MultiSellingStation" text="for later use"/> -->
+    <l10n filenamePrefix="modDesc/modDesc_l10n">
         <text name="name_MultiSellingStation">
             <en>Multi Selling Station</en>
             <de>Multi Verkaufsstation</de>
@@ -167,69 +166,6 @@ We also need help with translations, that can also be done there. (you will ofco
             <pl>Możesz znaleźć skrzynkę rozdzielczą w pobliżu, sprawdź to.</pl>
             <it>Puoi trovare un quadro elettrico nelle vicinanze, dai un'occhiata.</it>
         </text>
-        <text name="GrainExpress">
-            <en>EDGE Grain Vault</en>
-            <de>EDGE Getreidewölbung</de>
-            <fr>EDGE Coffre À Grains</fr>
-            <es>EDGE Bóveda De Grano</es>
-            <ru>EDGE Хранилище Зерна</ru>
-            <pl>EDGE Skarbiec Ziarna</pl>
-            <it>Bordo di grano EDGE</it>
-        </text>
-        <text name="GrainExpressBlack">
-            <en>EDGE Grain Vault Black</en>
-            <de>EDGE Getreidewölbung Schwarz</de>
-            <fr>EDGE Coffre À Grains Noir</fr>
-            <es>EDGE Bóveda De Grano Negra</es>
-            <ru>EDGE Хранилище Зерна Черный</ru>
-            <pl>EDGE Skarbiec Ziarna czarny</pl>
-            <it>Bordo di grano EDGE Nero</it>
-        </text>
-        <text name="GrainExpressGold">
-            <en>EDGE Grain Vault Gold</en>
-            <de>EDGE Getreidewölbung Gold</de>
-            <fr>EDGE Coffre À Grains or</fr>
-            <es>EDGE Bóveda De Grano Gold</es>
-            <ru>EDGE Хранилище Зерна золото</ru>
-            <pl>EDGE Skarbiec Ziarna złota</pl>
-            <it>Bordo di grano EDGE oro</it>
-        </text>
-        <text name="action_turnOnMarking">
-            <en>Show warning Stripes</en>
-            <de>Eckmarkierungen einblenden</de>
-            <fr>Afficher les rayures d'avertissement</fr>
-            <es>Mostrar franjas de advertencia</es>
-            <ru>Показать предупреждение полосы</ru>
-            <pl>Pokaż paski ostrzegawcze</pl>
-            <it>Mostra strisce di avviso</it>
-        </text>
-        <text name="action_turnOffMarking">
-            <en>Hide warning Stripes</en>
-            <de>Eckmarkierungen ausblenden</de>
-            <fr>Masquer les bandes d'avertissement</fr>
-            <es>Ocultar rayas de advertencia</es>
-            <ru>Скрыть предупреждение полосы</ru>
-            <pl>Ukryj paski ostrzegawcze</pl>
-            <it>Nascondi le strisce di avvertimento</it>
-        </text>
-        <text name="action_toggleFillmark_on">
-            <en>Show Fillmark</en>
-            <de>Füllmarkierung anzeigen</de>
-            <fr>Afficher la marque de remplissage</fr>
-            <es>Mostrar marca de relleno</es>
-            <ru>Показать отметку заполнения</ru>
-            <pl>Pokaż znak wypełnienia</pl>
-            <it>Mostra segno di riempimento</it>
-        </text>
-        <text name="action_toggleFillmark_off">
-            <en>Hide Fillmark</en>
-            <de>Füllmarkierung ausblenden</de>
-            <fr>Masquer la marque de remplissage</fr>
-            <es>Ocultar marca de relleno</es>
-            <ru>Скрыть отметку заполнения</ru>
-            <pl>Ukryj znak wypełnienia</pl>
-            <it>Nascondi segno di riempimento</it>
-        </text>
         <!--<text name="action_turnOnSwitchBox">
             <en>Show Switchbox</en>
             <de>Switchbox anzeigen</de>
@@ -248,56 +184,10 @@ We also need help with translations, that can also be done there. (you will ofco
             <pl>Ukryj Switchbox</pl>
             <it>Nascondi Switchbox</it>
         </text>-->
-        <text name="action_turnOnIcon">
-            <en>Show Trigger Icon</en>
-            <de>Triggersymbol anzeigen</de>
-            <fr>Afficher l'icône de déclenchement</fr>
-            <es>Mostrar icono de activador</es>
-            <ru>Показать значок триггера</ru>
-            <pl>Pokaż ikonę wyzwalacza</pl>
-            <it>Mostra icona trigger</it>
-        </text>
-        <text name="action_turnOffIcon">
-            <en>Hide Trigger Icon</en>
-            <de>Triggersymbol ausblenden</de>
-            <fr>Masquer l'icône du déclencheur</fr>
-            <es>Ocultar icono de activador</es>
-            <ru>Скрыть значок триггера</ru>
-            <pl>Ukryj ikonę wyzwalacza</pl>
-            <it>Nascondi icona trigger</it>
-        </text>
-        <text name="action_lightOn">
-            <en>Switch lights on</en>
-            <de>Licht anschalten</de>
-            <fr>Allumer les lumières</fr>
-            <es>Enciende las luces</es>
-            <ru>Включите свет</ru>
-            <pl>Włącz światła</pl>
-            <it>Accendi le luci</it>
-        </text>
-        <text name="action_lightOff">
-            <en>Switch lights off</en>
-            <de>Licht ausschalten</de>
-            <fr>Éteindre les lumières</fr>
-            <es>Apagar las luces</es>
-            <ru>Выключить свет</ru>
-            <pl>Wyłącz światła</pl>
-            <it>Spegnere le luci</it>
-        </text>
-        <text name="action_lightAuto">
-            <en>Set Lights to Auto</en>
-            <de>Stellen Sie die Lichter auf Auto</de>
-            <fr>Réglez les lumières sur Auto</fr>
-            <es>Establecer luces en automático</es>
-            <ru>Установите свет на авто</ru>
-            <pl>Ustaw światła na Auto</pl>
-            <it>Imposta le luci su Auto</it>
-        </text>
     </l10n>
     <placeableTypes>
-		<type name="easyWeighStation" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+		<type name="EDGEsellingStation" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
 			<specialization name="weighingStation" />
-			<specialization name="windTurbine" />
 			<specialization name="incomePerHour" />
 			<specialization name="sellingStation" />
 			<specialization name="infoTrigger" />

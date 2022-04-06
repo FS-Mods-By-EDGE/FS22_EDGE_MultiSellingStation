@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<author>Edge Gaming</author>
+<translator>Castiga</translator>
+	<texts>
+			<!--Names and Descriptions-->
+		<text name="GrainExpress"    						text="Bordo di grano EDGE"/>
+		<text name="GrainExpressBlack"    					text="Bordo di grano EDGE Nero"/>
+		<text name="GrainExpressGold"    					text="Bordo di grano EDGE oro"/>
+			<!--Actions-->
+		<text name="action_turnOnMarking"					text="Mostra strisce di avviso"/>
+		<text name="action_turnOffMarking"    				text="Nascondi le strisce di avvertimento"/>
+		<text name="action_toggleFillmark_on"    			text="Mostra segno di riempimento"/>
+		<text name="action_toggleFillmark_off"    			text="Nascondi segno di riempimento"/>
+		<text name="action_turnOnIcon"    					text="Mostra icona trigger"/>
+		<text name="action_turnOffIcon"    					text="Nascondi icona trigger"/>
+		<text name="action_lightOn"    						text="Accendi le luci"/>
+		<text name="action_lightOff"    					text="Spegnere le luci"/>
+		<text name="action_lightAuto"    					text="Imposta le luci su Auto"/>
+	</texts>
+</l10n>
