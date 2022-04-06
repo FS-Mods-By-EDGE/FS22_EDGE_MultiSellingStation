@@ -785,9 +785,11 @@
         <i3dMapping id="weighingStation_1" node="0>8|0" />
         <i3dMapping id="weighingTrigger" node="0>8|0|0" />
         <i3dMapping id="displayNode1" node="0>8|0|1" />
+        <i3dMapping id="displayNode2" node="0>8|0|2" />
         <i3dMapping id="visuals" node="0>8|1" />
         <i3dMapping id="winter" node="0>8|1|0" />
-        <i3dMapping id="display" node="0>8|1|1" />
+        <i3dMapping id="display1" node="0>8|1|1" />
+        <i3dMapping id="display2" node="0>8|1|1" />
         <i3dMapping id="weighingStation_vis" node="0>8|1|2" />
     </i3dMappings>
 </placeable>

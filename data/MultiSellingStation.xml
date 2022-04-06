@@ -190,19 +190,21 @@
 			<baleTrigger triggerNode="baleDestroyerTrigger" aiNode="triggerPos" deleteLitersPerSecond="10000"/>
 			<woodTrigger triggerNode="woodTrigger" aiNode="triggerPos" activationTriggerNode="woodSellTrigger" />
 		</unloadTrigger>
-        <fillType name="wheat"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="barley" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="oat"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="canola"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="sunflower"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="soybean" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="maize"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="potato"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="sugarbeet"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="cotton" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="sugarcane"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="egg"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="wool"        	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="COTTON"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="ROUNDBALE_COTTON"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SQUAREBALE_COTTON" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="WHEAT"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="BARLEY" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="OAT"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="CANOLA"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="SUNFLOWER"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SOYBEAN" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="MAIZE"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="POTATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="SUGARBEET"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SUGARCANE"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="EGG"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="WOOL"        	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="woodchips" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="silage"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="grass"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -224,7 +226,7 @@
         <fillType name="poppy"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="spelt"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="millet" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="sorghum"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+        <fillType name="SORGHUM"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="triticale"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="fertilizer"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="seeds" 		  	  priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
@@ -277,7 +279,6 @@
         <fillType name="quark"    		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="rapsoel"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="sojaoel"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-        <fillType name="cotton" 		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="sonnenblumenoel"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="woodbar"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="woodboard"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -292,14 +293,14 @@
         <fillType name="digestate"    	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="liquidfertilizer" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
 		<fillType name="herbicide"        priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
-        <fillType name="diesel" 	  	  priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
+        <fillType name="DIESEL" 	  	  priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
         <fillType name="urea"    	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="acetic_acid"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="weed"             priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
 		<fillType name="alfalfaPellets"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="rum"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="met"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="olive"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="OLIVE"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="SUGARBEET_CUT"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="ELECTRICCHARGE"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
         <fillType name="METHANE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -350,6 +351,7 @@
 		<fillType name="treesaplings"     priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
 		<fillType name="emptyPallet"      priceScale="1" supportsGreatDemand="false" disablePriceDrop="false"/>
 		<fillType name="woodbarrel"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="DONUTS"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<!-- Strawharwest addon -->
 		<fillType name="hayPellets"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="strawPellets"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -455,7 +457,6 @@
 		<fillType name="rye_windrow"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="beetRoot"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="redCabbage"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="sorghum"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="sorghum_windrow"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="spinach"     	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="tabacco"     	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -476,7 +477,7 @@
 		<fillType name="peach"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="plum"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cranBerry"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="grape"       	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
+		<fillType name="GRAPE"       	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="waterMelon"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 			<!-- Gemüse -->
 		<fillType name="cauliFlower"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -485,7 +486,6 @@
 		<fillType name="hops"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="cocoa"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pumpkin"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
-		<fillType name="olives"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="paprika"      	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="pepperoni"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
 		<fillType name="mushrooms"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false"/>
@@ -785,9 +785,11 @@
         <i3dMapping id="weighingStation_1" node="0>8|0" />
         <i3dMapping id="weighingTrigger" node="0>8|0|0" />
         <i3dMapping id="displayNode1" node="0>8|0|1" />
+        <i3dMapping id="displayNode2" node="0>8|0|2" />
         <i3dMapping id="visuals" node="0>8|1" />
         <i3dMapping id="winter" node="0>8|1|0" />
-        <i3dMapping id="display" node="0>8|1|1" />
+        <i3dMapping id="display1" node="0>8|1|1" />
+        <i3dMapping id="display2" node="0>8|1|1" />
         <i3dMapping id="weighingStation_vis" node="0>8|1|2" />
     </i3dMappings>
 </placeable>
