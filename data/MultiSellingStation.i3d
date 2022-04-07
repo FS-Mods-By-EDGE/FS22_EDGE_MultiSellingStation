@@ -96,7 +96,7 @@
       <Glossmap fileId="52"/>
       <CustomParameter name="lightControl" value="5 0.5 9 0"/>
     </Material>
-    <Material name="GlowingGrains" materialId="11" diffuseColor="1 1 1 1" specularColor="1 1 0" alphaBlending="true" customShaderId="19" customShaderVariation="additive_colorScale">
+    <Material name="GlowingGrains" materialId="11" alphaBlending="true" customShaderId="19" customShaderVariation="additive_colorScale">
       <Emissivemap fileId="18"/>
       <CustomParameter name="lightControl" value="0.3 0 0 0"/>
       <CustomParameter name="colorScale" value="0.7 0 0.3 0"/>
