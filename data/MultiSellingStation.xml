@@ -373,8 +373,8 @@
         <i3dMapping id="switchableMark" node="0>1|4" />
         <i3dMapping id="mark" node="0>1|4|0" />
         <i3dMapping id="light" node="0>1|4|0|0" />
-        <i3dMapping id="pointLight_0" node="0>1|4|0|1" />
-        <i3dMapping id="lightMark" node="0>1|4|0|0" />
+        <i3dMapping id="pointLight_0" node="0>1|4|0|0|0" />
+        <i3dMapping id="GlowPlane" node="0>1|4|0|0|0" />
         <i3dMapping id="triggerIcons_Load" node="0>1|5" />
         <i3dMapping id="illum_9" node="0>1|5|0" />
         <i3dMapping id="pointLight_1" node="0>1|5|0|0" />

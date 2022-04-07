@@ -96,7 +96,7 @@
       <Glossmap fileId="52"/>
       <CustomParameter name="lightControl" value="5 0.5 9 0"/>
     </Material>
-    <Material name="GlowingGrains" materialId="11" diffuseColor="1 1 1 1" specularColor="1 1 0" customShaderId="19" customShaderVariation="additive_colorScale">
+    <Material name="GlowingGrains" materialId="11" diffuseColor="1 1 1 1" specularColor="1 1 0" alphaBlending="true" customShaderId="19" customShaderVariation="additive_colorScale">
       <Emissivemap fileId="18"/>
       <CustomParameter name="lightControl" value="0.3 0 0 0"/>
       <CustomParameter name="colorScale" value="0.7 0 0.3 0"/>
@@ -330,9 +330,11 @@
             </TransformGroup>
           </Shape>
           <TransformGroup name="switchableMark" translation="0 5 5.74" nodeId="148">
-            <TransformGroup name="mark" visibility="false" nodeId="149">
-              <Shape shapeId="21" name="GlowPlane" translation="0 -4.84083 0.686" nodeId="151" materialIds="11" distanceBlending="false"/>
-              <Light name="pointLight" translation="0 -4.50965 0.686" rotation="0 -0 90" nodeId="150" type="point" color="1 0.58 0.71" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="15"/>
+            <TransformGroup name="mark" nodeId="149">
+              <TransformGroup name="light" translation="0 -5 -5.74" visibility="false" nodeId="223">
+                <Light name="pointLight" translation="0 0.49035 6.426" rotation="0 -0 90" nodeId="151" type="point" color="1 0.58 0.71" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="15"/>
+                <Shape shapeId="21" name="GlowPlane" translation="0 0.15917 6.426" nodeId="150" materialIds="11" distanceBlending="false"/>
+              </TransformGroup>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="triggerIcons_Unload" nodeId="152">
@@ -352,22 +354,22 @@
               <Shape shapeId="28" name="tipCollision" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="162" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             </Shape>
           </Shape>
-          <Shape shapeId="29" name="signBack" translation="2.33841 3.48711 1.34655" rotation="-0 90 0" scale="2.5 2.5 2.5" static="true" clipDistance="150" nodeId="164" materialIds="4" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="30" name="signSeed" translation="0 0 0.01036" clipDistance="300" nodeId="165" materialIds="17" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="31" name="banner" translation="0 0 -0.0118901" rotation="180 5.00896e-06 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="166" materialIds="4" castsShadows="true" receiveShadows="true">
-              <Shape shapeId="32" name="logoBanner" clipDistance="300" nodeId="167" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="29" name="signBack" translation="2.33841 3.48711 1.34655" rotation="-0 90 0" scale="2.5 2.5 2.5" static="true" clipDistance="150" nodeId="163" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="30" name="signSeed" translation="0 0 0.01036" clipDistance="300" nodeId="164" materialIds="17" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="31" name="banner" translation="0 0 -0.0118901" rotation="180 5.00896e-06 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="165" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="32" name="logoBanner" clipDistance="300" nodeId="166" materialIds="4" castsShadows="true" receiveShadows="true"/>
             </Shape>
           </Shape>
-          <Shape shapeId="33" name="signRound" translation="0 4.80901 2.358" clipDistance="300" nodeId="168" materialIds="4" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="34" name="logoRound" clipDistance="300" nodeId="169" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="33" name="signRound" translation="0 4.80901 2.358" clipDistance="300" nodeId="167" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="34" name="logoRound" clipDistance="300" nodeId="168" materialIds="4" castsShadows="true" receiveShadows="true"/>
           </Shape>
-          <Shape shapeId="35" name="industrialHatch" translation="2.318 -2.78854e-06 0" rotation="1.00179e-05 -4.37897e-13 0" clipDistance="60" nodeId="170" materialIds="12" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="36" name="col" visibility="false" static="true" density="0.0001" nodeId="171" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="35" name="industrialHatch" translation="2.318 -2.78854e-06 0" rotation="1.00179e-05 -4.37897e-13 0" clipDistance="60" nodeId="169" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="36" name="col" visibility="false" static="true" density="0.0001" nodeId="170" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </Shape>
-          <Shape shapeId="33" name="signRound" translation="0 4.80901 -2.358" rotation="180 -5.00896e-06 180" clipDistance="300" nodeId="172" materialIds="4" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="34" name="logoRound" clipDistance="300" nodeId="173" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="33" name="signRound" translation="0 4.80901 -2.358" rotation="180 -5.00896e-06 180" clipDistance="300" nodeId="171" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="34" name="logoRound" clipDistance="300" nodeId="172" materialIds="4" castsShadows="true" receiveShadows="true"/>
           </Shape>
-          <Shape shapeId="37" name="Foundation" translation="0 1.47081 0" static="true" clipDistance="400" nodeId="163" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="37" name="Foundation" translation="0 1.47081 0" static="true" clipDistance="400" nodeId="173" materialIds="8" castsShadows="true" receiveShadows="true"/>
         </Shape>
         <TransformGroup name="areaDefinitions" rotation="-180 -0 -180" nodeId="174">
           <TransformGroup name="Start01" translation="-2.5 1.37862e-06 -3" rotation="-4.07111e-13 1.94126e-19 -8.14222e-13" nodeId="175">
