@@ -198,7 +198,6 @@
         <fillTypeCategory name="FORAGEWAGON"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="FORK"	          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="HAYLOFT"	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillTypeCategory name="LIQUID"	          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="LOADINGVEHICLE"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="MANURESPREADER"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="MIXERWAGON"	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -284,6 +283,7 @@
 		<fillType name="WOOD"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOODCHIPS"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOOL"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="LIQUID"	          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
     <triggerMarkers>
         <triggerMarker node="warningStripesCorner1"/>
