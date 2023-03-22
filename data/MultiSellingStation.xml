@@ -179,14 +179,14 @@
 		</updateAreas>
 	</ai>
     <hotspots>
-        <hotspot text="$l10n_GrainExpress" type="UNLOADING" linkNode="mapPosition" />
+        <hotspot type="UNLOADING" linkNode="mapPosition" />
     </hotspots>
     <weighingStation triggerNode="weighingTrigger">
         <display node="displayNode1" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
         <display node="displayNode2" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
     </weighingStation>
     <sellingStation node="storageFarm" appearsOnPDA="true" appearsOnStats="true" supportsExtension="false" storageRadius="0" litersForFullPriceDrop="150000" fullPriceRecoverHours="52" showHotspotText="false">
-        <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="triggerPos" sellTriggerNode="StrawShovelTarget" fillTypes="BARLEY BOARDS BREAD BUTTER CAKE CANOLA CANOLA_OIL CEREAL CHAFF CHEESE CHOCOLATE CLOTHES COTTON DEF DIESEL DIGESTATE DRYGRASS DRYGRASS_WINDROW EGG ELECTRICCHARGE FABRIC FERTILIZER FLOUR FORAGE FORAGE_MIXING FURNITURE GRAPE GRAPEJUICE GRASS GRASS_WINDROW HERBICIDE HONEY LETTUCE LIME LIQUIDFERTILIZER LIQUIDMANURE MAIZE MANURE MEADOW METHANE MILK MINERAL_FEED OAT OILSEEDRADISH OLIVE OLIVE_OIL PIGFOOD POPLAR POTATO RAISINS ROADSALT SEEDS SILAGE SILAGE_ADDITIVE SNOW SORGHUM SOYBEAN STONE STRAW STRAWBERRY SUGAR SUGARBEET SUGARBEET_CUT SUGARCANE SUNFLOWER SUNFLOWER_OIL TOMATO WATER TREESAPLINGS WHEAT WOOD WOODCHIPS WOOL">
+        <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="triggerPos" sellTriggerNode="StrawShovelTarget" fillTypeCategories="AUGERWAGON BULK COMBINE FARMSILO FORAGEHARVESTER FORAGEWAGON FORK HAYLOFT LOADINGVEHICLE MANURESPREADER MIXERWAGON PIECE PRODUCT_BGA PRODUCT SHOVEL SILAGETRAILER SLURRYTANK SPRAYER SPREADER TRAINWAGON WINDROW LIQUID" >
 			<baleTrigger triggerNode="baleDestroyerTrigger" aiNode="triggerPos" deleteLitersPerSecond="10000"/>
 			<woodTrigger triggerNode="woodTrigger" aiNode="triggerPos" activationTriggerNode="woodSellTrigger" />
 		</unloadTrigger>
@@ -211,6 +211,7 @@
         <fillTypeCategory name="SPREADER"	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="TRAINWAGON"	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillTypeCategory name="WINDROW"	      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="LIQUID"	          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="BARLEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="BOARDS"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="BREAD"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -283,7 +284,6 @@
 		<fillType name="WOOD"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOODCHIPS"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOOL"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillTypeCategory name="LIQUID"	          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
     <triggerMarkers>
         <triggerMarker node="warningStripesCorner1"/>
