@@ -269,6 +269,7 @@
 		<fillType name="SORGHUM"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SOYBEAN"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="STONE"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="IRONORE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="STRAW"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="STRAWBERRY"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SUGAR"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
