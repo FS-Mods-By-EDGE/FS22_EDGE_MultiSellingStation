@@ -224,7 +224,6 @@
 		<fillType name="CHEESE"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="CHOCOLATE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="CLOTHES"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="COTTON"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="DEF"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="DIESEL"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="DIGESTATE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -241,7 +240,6 @@
 		<fillType name="GRAPEJUICE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="GRASS_WINDROW"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="HERBICIDE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="HONEY"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="LETTUCE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="LIME"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="LIQUIDFERTILIZER" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -259,7 +257,6 @@
 		<fillType name="RAISINS"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="ROADSALT"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SEEDS"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="SILAGE_ADDITIVE"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SILAGE"		 	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SNOW"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="SORGHUM"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -278,7 +275,6 @@
 		<fillType name="TREESAPLINGS"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WATER"            priceScale="0" supportsGreatDemand="false" disablePriceDrop="false"/>
 		<fillType name="WHEAT"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="WOOD"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOODCHIPS"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="WOOL"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
