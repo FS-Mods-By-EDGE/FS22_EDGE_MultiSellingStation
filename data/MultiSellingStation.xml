@@ -239,7 +239,6 @@
 		<fillType name="FURNITURE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="GRAPE"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="GRAPEJUICE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="GRASS"		      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="GRASS_WINDROW"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="HERBICIDE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="HONEY"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -249,16 +248,13 @@
 		<fillType name="LIQUIDMANURE"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="MAIZE"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="MANURE"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="MEADOW"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="METHANE"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="MILK"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="MINERAL_FEED"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="OAT"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="OILSEEDRADISH"	  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="OLIVE_OIL"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="OLIVE"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="PIGFOOD"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		<fillType name="POPLAR"			  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="POTATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="RAISINS"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="ROADSALT"		  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
